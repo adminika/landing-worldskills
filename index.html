@@ -24,6 +24,9 @@
 		<link rel="apple-touch-icon" sizes="152x152" href="./img/favicons/apple-touch-icon-152x152.png">
 		<link rel="apple-touch-icon" sizes="167x167" href="./img/favicons/apple-touch-icon-167x167.png">
 		<link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon-180x180.png">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/main.css"/>
     <title>Gulp-FrontEnd</title>
 
@@ -192,9 +195,101 @@
 
 			<div class="acor-content">
 				<input type="checkbox" name="chacor" id="chacor2" />
-				<label for="chacor2" class="acor-head">Заголовок вкладки</label>
+				<label for="chacor2" class="acor-head">
+					<div class="acor__grid">
+						<div class="acor__column acor__column-left">
+							<div class="category-group">
+								<span class="category__retraining">Переподготовка</span>
+								<span class="category__sports">Спорт</span>
+							</div>
+							<h3 class="acor__title">Фитнес-тренер универсал</h3>
+							
+							<span class="acor__duration">3,5 месяца</span>
+						</div>
+
+						<div class="acor__column acor__column-right">
+							<div class="group__training-form">
+								<div class="training-form__price">
+									<span>42000 ₽ / 12000 ₽</span>
+								</div>
+								<div class="training-form">
+									<span>очно/заочно</span>
+								</div>
+							</div>
+							<div class="acor__img">
+								<picture>
+									<source srcset="./img/acor1.webp" type="image/webp" />
+									<source srcset="./img/acor1.jpg" type="image/jpg" />
+									<img src="./img/acor1.jpg" alt="" />
+								</picture>
+							</div>
+							<div class="acor__arrow">
+								<svg class="icon-arrow">
+									<use xlink:href="./img/sprites/s-mono.svg#arrow"></use>
+								</svg>
+							</div>
+						</div>
+					</div>
+				</label>
 				<div class="acor-body">
-					<p>Описание вкладки</p>
+					<ul class="gen-desc">
+						<li class="gen-desc__title">Квалификация</li>
+						<li class="gen-desc__text">
+							Специалист по продвижению фитнес-услуг
+						</li>
+						<li class="gen-desc__title">Продолжительность обучения</li>
+						<li class="gen-desc__text">3,5 месяца</li>
+						<li class="gen-desc__title">Форма обучения</li>
+						<li class="gen-desc__text">Очная</li>
+						<li class="gen-desc__title">Выдаваемый документ</li>
+						<li class="gen-desc__text">
+							Диплом о профессиональной переподготовке и SKILLS PASSPORT
+							(Паспорт компетенций)
+						</li>
+					</ul>
+					<ul class="gen-modules">
+						<li class="gen-desc__title">Содержание обучения:</li>
+						<li class="gen-desc__text">
+							Модуль 1. Стандарты Ворлдскиллс и спецификация стандартов
+							Ворлдскиллс по компетенции «Физическая культура, спорт и фитнес».
+							Разделы спецификации
+						</li>
+						<li class="gen-desc__text">
+							Модуль 2. Актуальные требования рынка труда, современные
+							технологии в профессиональной сфере
+						</li>
+						<li class="gen-desc__text">
+							Модуль 3. Общие вопросы по работе в статусе самозанятого
+						</li>
+						<li class="gen-desc__text">
+							Модуль 4. Требования охраны труда и техники безопасности
+						</li>
+						<li class="gen-desc__text">
+							Модуль 5. Практическое занятие на определение стартового уровня
+							владения компетенцией
+						</li>
+						<li class="gen-desc__text">
+							Модуль 6. Цифровые и мультимедийные технологии, обеспечивающие
+							возможность on-line организации и дистанционного контроля за
+							тренировочной деятельностью
+						</li>
+						<li class="gen-desc__text">
+							Модуль 7. Кинезиология тренировочной деятельности
+						</li>
+						<li class="gen-desc__text">
+							Модуль 8. Определение физического состояния населения с
+							использованием методов фитнес-тестирования
+						</li>
+						<li class="gen-desc__text">
+							Модуль 9. Специфика составления программы для улучшения общего
+							физического состояния, для развития выносливости, силы, гибкости,
+							координации и баланса
+						</li>
+						<li class="gen-desc__text">
+							Модуль 10. Консультирование населения по вопросам ЗОЖ и физической
+							активности
+						</li>
+					</ul>
 				</div>
 			</div>
 		</div>
