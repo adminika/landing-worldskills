@@ -34,7 +34,7 @@
   <body>
     <div
       class="page__wrapper">
-      <header class="header-page">
+      <header class="header-page" id="header">
 	<div class="container-page">
 		<div class="header-page__wrapper">
 			<div class="header-page__logo logo">
@@ -50,16 +50,16 @@
 			<nav class="header-page__menu menu">
 				<ol class="menu__list">
 					<li class="menu__list-item">
-						<a href="#" class="menu__list-link">Программы</a>
+						<a href="#programs" class="menu__list-link">Программы</a>
 					</li>
 					<li class="menu__list-item">
-						<a href="#" class="menu__list-link">Обучаться бесплатно</a>
+						<a href="#studyfree" class="menu__list-link">Обучаться бесплатно</a>
 					</li>
 					<li class="menu__list-item">
-						<a href="#" class="menu__list-link">Подать заявку</a>
+						<a href="#participate" class="menu__list-link">Подать заявку</a>
 					</li>
 					<li class="menu__list-item">
-						<a href="#" class="menu__list-link">Контакты</a>
+						<a href="#contacts" class="menu__list-link">Контакты</a>
 					</li>
 				</ol>
 			</nav>
@@ -78,13 +78,13 @@
 					переподготовки»
 				</h1>
 				<p class="page-desc">WORLDSKILLS</p>
-				<a href="#" class="welcome__link"> К программам </a>
+				<a href="#programs" class="welcome__link"> К программам </a>
 			</div>
 		</div>
 	</div>
 </section>
 
-		<section class="section-page programs programs-prof">
+		<section class="section-page programs programs-prof" id="programs">
 	<div class="container-page">
 		<h2 class="section-title">
 			<span>Программы</span>
@@ -694,7 +694,7 @@
 	</div>
 </section>
 
-		<section class="section-page studyfree">
+		<section class="section-page studyfree" id="studyfree">
 	<div class="container-page">
 		<h2 class="section-title">Кто может обучаться бесплатно?</h2>
 		<div class="study__content">
@@ -805,7 +805,7 @@
 	</div>
 </section>
 
-		<section class="section-page participate">
+		<section class="section-page participate" id="participate">
 	<div class="container-page">
 		<h2 class="section-title">Как принять участие в программе?</h2>
 		<div class="participate__content">
@@ -867,7 +867,12 @@
 			</ol>
 
 			<div class="participate__link-wrapper">
-				<a href="#" class="participate__link">Принять участие</a>
+				<a
+					href="https://trudvsem.ru/information-pages/support-employment/"
+					class="participate__link"
+					target="_blank"
+					>Принять участие</a
+				>
 			</div>
 		</div>
 	</div>
@@ -912,7 +917,7 @@
 
 	</main>
 
-      <footer class="footer-page">
+      <footer class="footer-page" id="contacts">
 	<div class="container-page">
 		<div class="footer-page__wrapper">
 			<div class="footer-page__contacts">
@@ -931,7 +936,11 @@
 			<div class="footer-page__date-block">
 				<ul class="footer-page__socials-list socials-list">
 					<li class="socials-item">
-						<a href="#" class="socials-link">
+						<a
+							href="https://ok.ru/profile/585552900118"
+							class="socials-link"
+							target="_blank"
+						>
 							<svg class="icon-socials icon-socials--ok">
 								<use xlink:href="./img/sprites/s-mono.svg#ok"></use>
 							</svg>
@@ -939,7 +948,11 @@
 					</li>
 
 					<li class="socials-item">
-						<a href="#" class="socials-link">
+						<a
+							href="https://vk.com/public211809716"
+							class="socials-link"
+							target="_blank"
+						>
 							<svg class="icon-socials icon-socials--vk">
 								<use xlink:href="./img/sprites/s-mono.svg#vk"></use>
 							</svg>
@@ -947,7 +960,11 @@
 					</li>
 
 					<li class="socials-item">
-						<a href="#" class="socials-link">
+						<a
+							href="https://www.youtube.com/channel/UCqfNoX9sBX-H5Jx1kfA_h9Q"
+							class="socials-link"
+							target="_blank"
+						>
 							<svg class="icon-socials icon-socials--ytube">
 								<use xlink:href="./img/sprites/s-mono.svg#ytube"></use>
 							</svg>
@@ -962,7 +979,43 @@
 			</div>
 		</div>
 	</div>
+	<div class="scroll-top">
+		<button
+			class="btn-scroll-top"
+			id="myBtn"
+			onclick="topFunction()"
+			title="Вернуться к началу страницы"
+		>
+			<svg class="icon-arrow-top">
+				<use xlink:href="./img/sprites/s-mono.svg#arrow-up"></use>
+			</svg>
+		</button>
+	</div>
 </footer>
+
+<script>
+	// When the user scrolls down 20px from the top of the document, show the button
+	window.onscroll = function () {
+		scrollFunction();
+	};
+
+	function scrollFunction() {
+		if (
+			document.body.scrollTop > 250 ||
+			document.documentElement.scrollTop > 250
+		) {
+			document.getElementById("myBtn").style.display = "block";
+		} else {
+			document.getElementById("myBtn").style.display = "none";
+		}
+	}
+
+	// When the user clicks on the button, scroll to the top of the document
+	function topFunction() {
+		document.body.scrollTop = 0; // For Safari
+		document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+	}
+</script>
 
     </div>
 		
