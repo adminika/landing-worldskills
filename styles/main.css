@@ -460,6 +460,9 @@ button {
 .header-page__logo {
   width: 90px;
   height: 90px;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
 }
 
 .header-page__menu {
@@ -506,7 +509,6 @@ button {
 .menu__list-link:hover {
   border-bottom: 2px solid var(--color-secondary);
 }
-
 .welcome {
   padding-top: 215px;
   background: -webkit-gradient(linear, left top, left bottom, from(#0060bf), to(rgba(0, 96, 191, 0.78)));
@@ -557,7 +559,6 @@ button {
   background-color: var(--color-secondary);
   color: var(--color-primary);
 }
-
 .section-page {
   padding-top: 50px;
   padding-bottom: 50px;
@@ -720,6 +721,15 @@ button {
   white-space: nowrap;
 }
 
+.acor__group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
 .acor__img {
   -webkit-box-flex: 0;
   -ms-flex: 0 0 auto;
@@ -814,7 +824,6 @@ button {
   font-size: 20px;
   letter-spacing: 0.01em;
 }
-
 .section-page.study {
   padding-bottom: 100px;
 }
@@ -874,7 +883,6 @@ button {
 .study__subtext-link:hover {
   text-decoration: underline;
 }
-
 .participate {
   background-color: var(--color-primary);
 }
@@ -967,7 +975,6 @@ button {
   color: var(--color-primary);
   background-color: var(--color-secondary);
 }
-
 .passport__content {
   color: var(--color-third);
   padding-left: 65px;
@@ -1006,7 +1013,6 @@ button {
   text-align: center;
   color: var(--color-third);
 }
-
 .footer-page {
   padding-top: 80px;
   padding-bottom: 80px;
@@ -1157,5 +1163,214 @@ svg.icon-socials.icon-socials--ok {
   fill: var(--color-primary);
   -webkit-transition: fill 0.3s ease;
   transition: fill 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .header-page__wrapper {
+    height: 50px;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .menu__list-link {
+    white-space: nowrap;
+  }
+  .header-page__menu {
+    padding-left: 0px;
+  }
+  .page-desc {
+    font-size: 40px;
+    margin-bottom: 45px;
+  }
+  .page-title {
+    margin-bottom: 35px;
+  }
+  .welcome__inner {
+    padding-top: 120px;
+  }
+  .section-page {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .section-title {
+    font-size: 34px;
+    margin-bottom: 40px;
+  }
+  .study__col-img {
+    width: 150px;
+    height: 150px;
+  }
+  .study__subtext {
+    margin-top: 40px;
+  }
+  .section-page.study {
+    padding-bottom: 40px;
+  }
+  .participate__list-item {
+    padding: 10px 30px 20px 15px;
+  }
+  .participate__list {
+    row-gap: 20px;
+  }
+  .footer-page {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .scroll-top {
+    bottom: 25px;
+    right: 25px;
+  }
+  .scroll-top .btn-scroll-top {
+    border-width: 3px;
+    height: 50px;
+    width: 50px;
+  }
+  .icon-arrow-top {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .header-page__menu {
+    display: none;
+  }
+  .welcome {
+    padding-top: 0px;
+  }
+  .welcome__wrapper {
+    background-size: 250px 250px;
+  }
+  .section-title {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  .acor__grid {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+  .acor__column-right {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  .study__col-img {
+    width: 75px;
+    height: 75px;
+  }
+  .study__row {
+    -webkit-column-gap: 15px;
+    -moz-column-gap: 15px;
+    column-gap: 15px;
+  }
+  .study__text {
+    font-size: 16px;
+  }
+  .participate__num {
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+    margin-right: 10px;
+  }
+  .participate__text {
+    font-size: 16px;
+    line-height: 1.2;
+  }
+  .participate__link-wrapper {
+    margin-top: 35px;
+  }
+  .passport__content {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 568px) {
+  .footer-page__contacts {
+    max-width: 100%;
+  }
+  .footer-page__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+}
+
+@media (max-width: 450px) {
+  .page-desc {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  .welcome__link {
+    margin-bottom: 245px;
+  }
+  .section-title {
+    font-size: 22px;
+  }
+  .acor__title {
+    font-size: 22px;
+  }
+  .acor__grid {
+    grid-row-gap: 15px;
+  }
+  .acor__img {
+    display: none;
+  }
+  .acor__column-right {
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
+    align-items: baseline;
+  }
+  .group__training-form {
+    margin-right: 0;
+  }
+  .acor-content .acor-body {
+    width: 100%;
+    padding: 0 5px;
+    border-radius: 5px;
+  }
+  .acor-content input:checked + label + .acor-body {
+    margin-top: 10px;
+    padding: 5px 5px;
+  }
+  .gen-desc__title {
+    font-size: 18px;
+  }
+  .gen-desc li,
+.gen-modules li {
+    margin-bottom: 7px;
+  }
+  .gen-desc__text {
+    font-size: 16px;
+  }
+  .study__col-img {
+    display: none;
+  }
+  .study__content {
+    row-gap: 15px;
+  }
+  .section-page {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .participate__list-item {
+    padding: 10px 10px 10px 10px;
+  }
+  .participate__link {
+    font-size: 28px;
+  }
+  .passport__text {
+    font-size: 16px;
+  }
+  .passport__row-img {
+    row-gap: 30px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
 }
 /*# sourceMappingURL=maps/main.css.map */
